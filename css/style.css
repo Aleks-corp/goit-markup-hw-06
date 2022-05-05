@@ -473,7 +473,7 @@ img {
 
 .footer-social-container {
   margin-left: 70px;
-  margin-top: 15px;
+  margin-top: 12px;
 }
 .footer-social-container .title {
   font-weight: 700;
@@ -512,6 +512,56 @@ img {
 .contact:hover,
 .contact:focus {
   color: var(--accent-color);
+}
+
+/* ----------subscribe---------- */
+
+.footer-subscribe-conteiner {
+  margin-left: auto;
+  margin-top: 12px;
+}
+.subscr-title {
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+  margin-bottom: 20px;
+}
+.subcr-email-input {
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-left: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+}
+.subscr-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 29px;
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0;
+  border-radius: 4px;
+  margin-left: 12px;
+}
+.subscr-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+.subscr-btn .icon {
+  margin-left: 10px;
+  fill: var(--primary-bg-color);
+}
+.subscr-btn:hover,
+.subscr-btn:focus {
+  background-color: #188ce8;
 }
 
 /* ----------portfolio---------- */
@@ -621,9 +671,7 @@ img {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-body {
-  overflow: hidden;
-}
+
 
 .backdrop.is-hidden {
   opacity: 0;
@@ -639,20 +687,23 @@ body {
 }
 .modal {
   position: absolute;
+  top: 50%;
+  left: 50%;
+
   width: 536px;
   max-width: 100%;
   height: 585px;
   max-height: 100%;
   padding: 40px;
+  overflow: auto;
+
   background-color: var(--primary-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  top: 50%;
-  left: 50%;
+
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  overflow: auto;
 }
 .backdrop .modal-close-button {
   padding: 5px;
